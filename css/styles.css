@@ -1,0 +1,195 @@
+body {
+    margin: auto;
+    padding: 30px;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    background: url(wallapper.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* ---- Set up site grid ---- */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 150px 150px 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo banner banner banner"
+        "side side main main"
+        "footer footer footer footer";
+        grid-gap: 5px;
+    
+}
+
+/* ---- End of grid setup ---- */
+
+
+/* -000- Area styling -000- */
+
+.box {
+    padding: 25px;
+    border-radius: 10px;
+    border: solid #111 1px;
+}
+
+/* Area colouring... */
+
+/* logo, banner and footer background are the same */
+.logo, .banner, .footer {
+    background-color: #88d1ce;  /* light mint */
+}
+
+/* Set font on dark areas to white */
+.side {
+    color: #fff;
+}
+
+/* Area specifics */
+
+.logo {
+    grid-area: logo;
+    padding: 0;
+    height: 150px;
+    width: auto;
+    background-image: url(burger_logo-v3.png);
+}
+
+.banner {
+    padding: 0;
+    padding-left: 20px;
+    grid-area: banner;
+    display: flex;
+    height: 150px;
+    align-items:center;
+    justify-content: left;
+}
+
+.side {
+    grid-area: side;
+    background-color: #555;
+    
+}
+
+.main {
+    grid-area: main;
+    background-color: #f0fff9;  /* very pale grey */
+}
+
+
+.footer {
+    grid-area: footer;
+    padding: 0;
+    padding-right: 20px;
+    text-align: right;
+}
+
+/* -000- End of area styling -000- */
+
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* links in page */
+a {font-weight: bold;}
+a:link{color: #90dece;} /*dark_red */
+a:visited{color: #e0fff9;} /* dark blue */
+a:hover{color: #dedede;}    /* Black*/
+
+
+/* Contact Form Styling */
+.contact {
+    width: 100%;
+}
+
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.center_image {
+    text-align: center;
+}
+
+/* Sub Heading Formatting */
+.sub_heading {
+    font-family: 'Ubuntu', sans-serif;
+    color: #000; /* purple */
+    font-weight: bold;
+}
+
+.results {
+    padding: 10px;
+    background-color: #d3f2f0;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.error {
+    background-color: #ffe0ed; /* pale pink */
+    border: 2px solid #8a1737; /* dark red border */
+    color: #8a1737; /* dark red */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.search {
+    width: 200px;
+    padding: 8px 15px;
+    background: #fff;
+    border: 0px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+.submit {
+    font-family: FontAwesome;
+    position: relative;
+    width: 45px;
+    background-color: white;
+    color: #000;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 70%;
+}
+
+input[type="submit"]:hover {
+    background-color: #d8d8d8;
+}
+
+input {
+    height: 50px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.half_width {
+    width: 99px;
+}
+
+select {
+/*    outline: 0;*/
+    width: 200px;
+    height: 50px;
+    padding: 8px 15px;
+    background: #fff;
+    border: 0px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+form {
+    width: 250px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
