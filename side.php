@@ -2,7 +2,9 @@
             
             <h2>Search | <a class="side" href="show-all.php">Show all</a></h2>
             
-            <hr />
+            <hr>
+            
+            <p><i>Title search</i></p>
             
             <!-- Start of name search -->
             <form method="post" action="name-search.php" enctype="multipart/form-data" >
@@ -12,10 +14,10 @@
                 <input class="submit" type="submit" name="find_name" value="&#128269;"/>
                 
             </form>
+            <hr>
             <!-- End of name search -->
-            
-            <br>
-            <h4>Meal type</h4>
+
+            <p><i>Meal type search</i></p>
             
             <!-- Start of meal-type search -->
             <form method="post" action="type-search.php" enctype="multipart/form-data">
@@ -30,9 +32,10 @@
             <input class="submit" type="submit" name="find_meal" value="&#128269;" />
 
             </form>
+            <hr>
             <!-- End of meal-type search -->
             
-            <br>
+            <p><i>Rating search</i></p>
             
             <!-- Start of rating search -->
             <form method="post" action="rating-search.php" enctype="multipart/form-data">
@@ -53,7 +56,36 @@
                 <input class="submit" type="submit" name="find_rating" value="&#128269;"/>
             
             </form>
+            <hr>
             <!-- End of rating search -->
+            
+            <p><i>Vegetarian search</i></p>
+            
+            <form method="post" action="vege-search.php" enctype="multipart/form-data">
+                
+                <select name="vegetarian">
+                    <option value="No" selected>Non-vegetarian</option>
+                    <option value="Yes">Vegetarian</option>
+                </select>
+            
+            <input class="submit" type="submit" name="find_vege" value="&#128269;" />
+
+            </form>
+            <hr>
+            
+            <p><i>Location search</i></p>
+            
+            <form method="post" action="location-search.php" enctype="multipart/form-data">
+                
+                <select name="location">
+                    <option value="Home">Home</option>
+                    <option value="Away">Away</option>
+                </select>
+            
+            <input class="submit" type="submit" name="find_location" value="&#128269;" />
+
+            </form>
+            
             
             
         </div> <!-- end of side bar -->
